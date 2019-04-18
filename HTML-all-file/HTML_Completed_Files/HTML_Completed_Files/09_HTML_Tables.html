@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        table , th , td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0 0 15px black;
+        }
+        #custom thead{
+            background-color: orangered;
+            color: white;
+        }
+        #custom tbody{
+            background-color: lightsalmon;
+        }
+
+        #blue thead{
+            background-color: darkblue;
+            color: white;
+        }
+        #blue tbody{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+    <table id="blue">
+        <thead>
+            <tr>
+                <th>SNO</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rajan</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>John</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Yong</td>
+                <td>Japan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th colspan="2">NAME</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2">John From USA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yong</td>
+            <td>Japan</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>Rajan</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yong</td>
+            <td>Japan</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+    <table id="custom">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yong</td>
+            <td>Japan</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

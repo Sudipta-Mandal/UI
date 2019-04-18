@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Transformation</title>
+    <style>
+        section{
+            font-family: "Comic Sans MS",sans-serif;
+            background-color: lightgray;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+            text-align: center;
+        }
+        article{
+            width: 300px;
+            display: inline-block;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0 0 15px black;
+            border-radius: 10px;
+            transition: all 0.5s;
+        }
+        article:hover{
+            cursor: pointer;
+            /*transform: translateY(-10px);*/
+            /*transform: perspective(500px) rotateX(-20deg);*/
+            /*transform: perspective(500px) rotateY(20deg);*/
+            /*transform: rotate(180deg);*/
+            transform: perspective(500px) skewY(-20deg);
+        }
+    </style>
+</head>
+<body>
+
+
+    <section>
+        <h2>CSS3 Transformation</h2>
+
+        <article class="t_article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illo maxime obcaecati optio sapiente tempore totam, vel veritatis voluptate. Culpa dolorem enim praesentium voluptate. Delectus ex nam praesentium sapiente voluptatum!</p>
+        </article>
+
+        <article class="t_article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illo maxime obcaecati optio sapiente tempore totam, vel veritatis voluptate. Culpa dolorem enim praesentium voluptate. Delectus ex nam praesentium sapiente voluptatum!</p>
+        </article>
+
+        <article class="t_article">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illo maxime obcaecati optio sapiente tempore totam, vel veritatis voluptate. Culpa dolorem enim praesentium voluptate. Delectus ex nam praesentium sapiente voluptatum!</p>
+        </article>
+
+    </section>
+
+</body>
+</html>

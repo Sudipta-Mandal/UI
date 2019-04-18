@@ -1,0 +1,24 @@
+body{
+    font-family: "Comic Sans MS", sans-serif;
+    margin: 0;
+}
+
+.buttons , .imgSection{
+    text-align: center;
+    padding: 10px;
+}
+button{
+    padding: 14px 25px;
+    font-size: 25px;
+    background-color: coral;
+}
+
+#myImage{
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    border: 5px solid white;
+}

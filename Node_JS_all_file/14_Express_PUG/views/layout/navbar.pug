@@ -1,0 +1,39 @@
+doctype html
+head
+  title #{title}
+  link(rel='stylesheet', href='../public/stylesheets/bootstrap.css')
+  link(rel='stylesheet', href='../public/stylesheets/mdb.css')
+  link(rel='stylesheet', href='../public/stylesheets/style.css')
+body
+nav.navbar.navbar-expand-md.navbar-dark.bg-primary
+  a.navbar-brand(href='#') Express PUG
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarCollapse.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      if(page === 'index')
+        li.nav-item.active
+          a.nav-link(href='/') Home
+      else
+        li.nav-item
+          a.nav-link(href='/') Home
+      if(page === 'about')
+        li.nav-item.active
+          a.nav-link(href='/about') About Us
+      else
+        li.nav-item
+          a.nav-link(href='/about') About Us
+      if(page === 'contact')
+        li.nav-item.active
+          a.nav-link(href='/contact') Contact Us
+      else
+        li.nav-item
+          a.nav-link(href='/contact') Contact Us
+      if(page === 'careers')
+        li.nav-item.active
+          a.nav-link(href='/careers') Careers
+      else
+        li.nav-item
+          a.nav-link(href='/careers') Careers
+
+block content

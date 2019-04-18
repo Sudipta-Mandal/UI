@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>Alerts & Progress in Bootstrap4</title>
+    <style>
+
+        .my-alert{
+            box-shadow: 0 0 5px black;
+        }
+        .progress{
+            box-shadow: 0 0 5px gray;
+            border-radius: 50px;
+            height: 35px;
+        }
+        .progress-bar{
+            border-radius: 50px;
+        }
+        .my-progress .progress-bar{
+            background: linear-gradient(to right bottom, darkgreen,lightgreen,darkgreen);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Alerts & Progress in Bootstrap4</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+        <!--########################START HERE#########################-->
+        
+        <!-- ALERTS -->
+        <!-- Alert Success -->
+        <div class="alert alert-success">
+            <strong>Success</strong> Blog post added
+            <a href="#" class="alert-link">Check it out</a>
+        </div>
+
+        <!-- Alert primary -->
+        <div class="alert alert-primary">
+            <strong>Attention</strong> You have a new message
+            <a href="#" class="alert-link">Check it out</a>
+        </div>
+
+        <!-- Alert warning -->
+        <div class="alert alert-warning">
+            <strong>Warning</strong> Please check the log files
+            <a href="#" class="alert-link">Check it out</a>
+        </div>
+
+         <!-- Alert danger -->
+        <div class="alert alert-danger">
+            <h4>There's a Problem</h4>
+            <strong>Error</strong> Database update failed
+            <a href="#" class="alert-link">Check it out</a>
+        </div>
+
+        <!-- DISMISSABLE Alert-->
+        <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">
+                <span><i class="fa fa-window-close"></i></span>
+            </button>
+            <strong>Success</strong> Blog post added <a href="#" class="alert-link">Check it out</a>
+        </div>
+
+        <div class="alert alert-success animated slideInRight my-alert bg-success text-white">
+            <button type="button" class="close text-white" data-dismiss="alert">
+                <span><i class="fa fa-times-circle"></i></span>
+            </button>
+            <h3>Successfully Added</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque est exercitationem fugiat harum ipsum laboriosam maxime natus nihil perferendis placeat quas quasi quis ratione recusandae, ullam unde voluptatem voluptates?</p>
+        </div>
+
+        <br><br>
+
+        <!-- PROGRESS BARS -->
+        <div class="progress mt-2">
+            <div class="progress-bar bg-info" style="width: 25%;"></div>
+        </div>
+
+    <div class="progress mt-4">
+        <div class="progress-bar bg-primary" style="width: 45%;"></div>
+    </div>
+
+    <div class="progress mt-4">
+        <div class="progress-bar bg-success" style="width: 65%;"></div>
+    </div>
+
+    <div class="progress mt-4">
+        <div class="progress-bar bg-warning" style="width: 85%;"></div>
+    </div>
+
+    <div class="progress mt-4">
+        <div class="progress-bar bg-danger" style="width: 95%;"></div>
+    </div>
+
+    <div class="progress mt-4 my-progress">
+        <div class="progress-bar" style="width: 95%;"></div>
+    </div>
+
+        <br>
+
+    </div><!-- ./container -->
+    <div style="margin-top:500px;"></div>
+
+<!-- BODY ENDS -->
+<script src="bootstrap/js/fontawesome-all.js"></script>
+<script src="bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/mdb.min.js"></script>
+</body>
+</html>

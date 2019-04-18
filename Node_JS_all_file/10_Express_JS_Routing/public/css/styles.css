@@ -1,0 +1,46 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+}
+nav{
+    text-align: left;
+    background-color: orange;
+    padding: 5px;
+    box-shadow: 0 0  15px black;
+}
+nav a{
+    color: white;
+    text-decoration:  none;
+    padding: 10px 25px;
+    display: inline-block;
+}
+nav a:hover{
+    background-color: orangered;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+nav a.active{
+    background-color: darkred;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+p{
+    font-size: 18px;
+    color: gray;
+}
+h1{
+    color: darkred;
+    font-size: 35px;
+}
+section{
+    padding: 20px;
+}
+table{
+    width: 100%;
+}
+table , td , th {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid orangered;
+    border-collapse: collapse;
+}

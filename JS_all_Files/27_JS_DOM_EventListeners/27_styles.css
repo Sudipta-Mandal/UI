@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+section{
+    background-color: lightgray;
+    padding: 20px;
+    box-shadow: 0 0 15px black;
+}
+input{
+    margin: 5px;
+    font-size: 18px;
+}
+h2 , h3 {
+    margin: 0;
+}

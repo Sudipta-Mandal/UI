@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="10_styles.css">
+</head>
+<body>
+
+    <!-- Buttons -->
+    <section class="buttons">
+        <button type="button" onclick="displayMessage('Good Morning','lightgreen')">Good Morning</button>
+        <button type="button" onclick="displayMessage('Good Afternoon','orange')">Good Afternoon</button>
+        <button type="button" onclick="displayMessage('Good Evening','lightblue')">Good Evening</button>
+        <button type="button" onclick="displayMessage('Good Night','gray')">Good Night</button>
+        <h1 id="msg"></h1>
+    </section>
+
+    <section class="buttons">
+        <button type="button" id="gm">Good Morning</button>
+        <button type="button" id="ga">Good Afternoon</button>
+        <button type="button" id="ge">Good Evening</button>
+        <button type="button" id="gn">Good Night</button>
+        <h1 id="newMsg"></h1>
+    </section>
+
+    <section class="imgSection">
+        <button type="button" onclick="changeImage('youtube.jpg')">Youtube</button>
+        <button type="button" onclick="changeImage('facebook.jpg')">Facebook</button>
+        <button type="button" onclick="changeImage('google.jpg')">Google</button>
+        <button type="button" onclick="changeImage('lightbulbs.jpg')">Light</button>
+        <button type="button" onclick="changeImage('corporate.jpg')">Corporate</button>
+        <img src="../img/forest.jpg" id="myImage">
+    </section>
+
+
+<script src="10_script.js"></script>
+</body>
+</html>

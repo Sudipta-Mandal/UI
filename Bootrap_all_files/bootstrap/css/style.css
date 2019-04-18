@@ -1,0 +1,6 @@
+/* Your custom styles */
+.carousel .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100% !important;
+    cursor: pointer; }

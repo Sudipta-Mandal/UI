@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Nav Element</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background-color: orange;
+            padding: 5px;
+            box-shadow: 0 0 15px black;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 12px 25px;
+            display: block;
+            font-size: 18px;
+        }
+        nav ul li a:hover{
+            background-color: orangered;
+            color: white;
+        }
+        nav ul li a.active{
+            background-color: darkred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- HTML Nav Element -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#" >Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Careers</a>
+            </li>
+            <li>
+                <a href="#">Courses</a>
+            </li>
+            <li>
+                <a href="#">Internships</a>
+            </li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>

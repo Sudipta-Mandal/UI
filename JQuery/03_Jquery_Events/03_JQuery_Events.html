@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="03_styles.css">
+    <title>JQuery Events</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Events</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <!-- click event -->
+    <h3>Click Event</h3>
+    <button class="btn btn-success" id="login-button">Login</button>
+
+    <!-- dbl Click -->
+    <h3>Dbl Click Event</h3>
+    <button class="btn btn-danger" id="register-button">Register</button>
+
+    <!-- Toggle Button -->
+    <h3>Toggle Button</h3>
+    <button class="btn btn-success" id="toggle-button">Login</button>
+
+    <!-- Images Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Image 1</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/image1.jpeg" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Image 2</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/image2.jpeg" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Image 3</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="../img/image3.jpeg" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mouse Enter -->
+    <h3>Mouse Enter</h3>
+    <button class="btn btn-primary" id="blue-button">Hover Me</button>
+
+    <div class="modal" id="hover-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Don't go Please</h3>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-window-close"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Offer Only for You!</h3>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi assumenda delectus dolor doloremque, dolorum eaque earum eligendi et exercitationem inventore ipsum iure numquam porro qui quidem rem sed similique sint tempore. Aperiam, autem, consequuntur culpa dignissimos explicabo facere illo magni maiores nulla officia quia quo repellendus reprehenderit ullam, vero.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/fontawesome-all.js"></script>
+<script src="../bootstrap/js/jquery-3.2.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="03_app.js"></script>
+</body>
+</html>
+

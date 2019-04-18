@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdown Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        nav{
+            background: white url("img/image3.jpeg") no-repeat scroll bottom;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 12px 25px;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            background-color:#7e8581;
+        }
+        nav ul li a.active{
+            background-color: darkred;
+        }
+        .dropdown_list{
+            position: absolute; /* to stick with the parent */
+            background: white url("img/image3.jpeg") no-repeat scroll bottom;
+            display: none;
+        }
+        .dropdown_list a{
+            display: block;
+        }
+        /* for hover effect */
+        .dropdown:hover .dropdown_list{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dropdown Navbar -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">News <i class="fa fa-caret-down"></i> </a>
+                <div class="dropdown_list">
+                    <a href="#">Sports</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Arts</a>
+                    <a href="#">Others</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Careers</a>
+            </li>
+            <li>
+                <a href="#">Courses</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>

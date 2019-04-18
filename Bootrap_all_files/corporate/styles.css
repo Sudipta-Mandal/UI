@@ -1,0 +1,45 @@
+.bg-teal{
+    background-color: #0a6a78;
+}
+.text-teal{
+    color: #0a6a78;
+}
+.btn-teal{
+    background-color: #0a6a78 !important;
+}
+.my-img{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0a6a78;
+}
+.carousel .carousel-indicators li {
+    max-width: 30px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50% !important;
+    cursor: pointer;
+    border: 5px solid teal;
+    box-shadow: 0 0 5px white;
+}
+.t_img{
+    box-shadow: 0 0 10px #0a6a78;
+    margin-top: -70px;
+}
+.t_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0a6a78;
+    transition: all 0.5s;
+}
+.t_card:hover{
+    background-color: #0a6a78;
+    transform: perspective(400px) rotateX(10deg);
+}
+.t_card:hover h3 , .t_card:hover p{
+    color: white;
+}
+.t_card:hover .t_icon{
+    color: white;
+}
+.p_card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0a6a78;
+}

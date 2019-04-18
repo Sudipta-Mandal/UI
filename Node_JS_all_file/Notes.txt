@@ -1,0 +1,237 @@
+Creating server using Express JS
+--------------------------------
+-> Express JS is 3rd party module, we need to install it using npm.
+-> for this we should have a package.json in our project.
+
+for package.json -> npm init
+for express js   -> npm install express --save
+
+-> Once installed, this express module will be stored in the node_modules folder. so that we can import this in our application.
+
+-> to import express js in our application use the following command,
+
+Ex: const express = require('express');
+	const app = express();
+	
+	app.get('/',(request,response)=> {
+		response.send('welcome to Express JS');
+	});
+
+	app.listen(3000,'127.1.1.1');
+	
+-> We can send various types content or the reponse back to client using the reponse object.
+
+-> This reponse object contains the following methods to send diff types of response.
+
+Ex: response.send(); -> normal Plain Text / HTML Tag
+    response.sendFile() -> for a Static HTML document
+	response.json() -> to send an object in JSON format
+	response.download() -> to download any file from the server
+	reponse.render() -> to send a dynamic content using      	Template Engine
+	
+-> the Express JS cannot serve the static files like stylesheets , javascript files automatically for every request.
+
+-> for we need to add a middleware to access the static files from any public folder using the following statement.
+
+Ex: app.use('/public',express.static('public'));
+
+-> A Middleware is acts like a mediator to handle all the incoming requests and pass it on to the server.
+
+Types requests from a Clients
+-----------------------------
+-> We normally send a HTTP request from the client. This is having various methods like GET , POST , DELETE , TRACE etc.
+
+GET -> to get some data from the server
+POST -> to send or upload some data to a server
+DELETE -> to delete any file from the server / database
+TRACE -> to test the flow of incoming request from the client
+
+-> To handle all these requests, in Express JS we have the following methods.
+
+GET -> app.get();
+POST -> app.post();
+DELETE -> app.delete();
+TRACE -> app.trace();
+
+-> In Get requests we can even send some data to the server using Query Strings / Query parameters
+
+Ex: Query Parameters -> 
+   
+       hostname.com/profile/100
+	   hostname.com/profile/45664
+
+	We can fetch the query parameters at the server using the request object 
+	
+	app.get('/profile/:id',(request,response) => {
+		let params = request.params;
+		console.log(params);
+	});
+	
+Ex: Query Strings -> 
+   
+       hostname.com/profile/name=John
+	   hostname.com/profile/name=John&age=40
+	   hostname.com/profile/name=John&age=40&designation=Manager
+
+	We can fetch the query Strings at the server using the request object 
+	
+	app.get('/profile',(request,response) => {
+		let query = request.query;
+		console.log(query);
+	});
+	
+-> All the GET requests will be send to the server in the URL.
+   But any form data or passwords information should not be send in the server in the URL, beacuse there there may be a chance of hacking.
+   
+-> So each form data we needs to send with POST request only.
+   then the form data will not be added to the URL ,  it will send in the request payload / Body.
+
+-> To handle the POST requests at the server using the following method.
+
+Ex: app.post('/contact',(request,response) => {
+		// statements
+	});
+   
+-> To handle all the post requests in an easy manner, we use a 3rd party module called 'body-parser'
+
+-> we can install this using 'npm'
+  
+  Ex: npm install body-parser --save
+
+-> Usage of Body-parser
+------------------------
+const bodyParser = require('body-parser');
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
+		
+app.post('/contact',urlencodedParser,(request,response) => {
+	let formdata = request.body;
+	console.log(formdata);
+});
+
+Note: By using all the above ways we only send the static HTML files to the client.
+-> to serve any dynamic data from the server to the client we need to use the following Template Engines.
+
+1) EJS -> Embedded JS 
+   Ext -> home.ejs
+
+2) PUG / JADE
+   Ext -> home.pug / home.jade
+   
+   Note: PUG is the new name for the JADE template engine.
+   
+3) HBS (Handle bars)
+   Ext -> home.hbs
+   
+Note: These Template Engines are used to insert the Javascript code inside the HTML Document dynamically.   
+   
+   
+   
+ Express Generator
+------------------
+-> Changes
+----------
+
+1) package.json
+    "start": "node ./bin/www" => 
+	 "start": "nodemon ./bin/www"		
+   
+2) Change all the 'var' to 'const'
+3) In app.js 
+app.use('/public',express.static(path.join(__dirname, 'public')));
+
+EJS
+-----
+<% = title %>
+<% include layout/navbar %>
+
+PUG
+----
+ #{title}
+ extends layout/navbar
+ 
+HBS
+----
+{{title}} 
+{{> layout/navbar}}
+
+
+https://www.mongodb.com/ => products => softwares
+
+ MongoDB Server
+ MongoDB Compass
+ 
+ 
+ 
+ 
+ 
+
+      
+
+
+
+
+	
+
+
+  
+
+
+   
+
+
+   
+		
+
+
+  
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+

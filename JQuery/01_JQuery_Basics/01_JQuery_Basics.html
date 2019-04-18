@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="01_styles.css">
+    <title>JQuery Basics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Basics</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <h2>JQuery Basics</h2>
+    <p class="lead text-primary" onclick="$(this).hide()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam asperiores atque consequatur cum ducimus, ea eius excepturi fugiat, id impedit nulla numquam, officia perferendis repellat ullam velit. At, similique soluta. Accusantium ad, ea nam non nostrum nulla quos voluptatibus?</p>
+
+    <h2>Internal Approach using JQuery</h2>
+    <div class="card" id="card">
+        <div class="card-body bg-light">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A atque deserunt facere inventore maxime natus nesciunt quod repellat voluptatibus? Aspernatur et explicabo molestias natus, nihil quae saepe temporibus. Accusamus animi cumque doloribus ducimus impedit ipsam iste, nihil odit placeat possimus provident quae ratione soluta suscipit tempore velit voluptatibus. Enim, voluptatibus.</p>
+        </div>
+    </div>
+
+    <h2>External Approach using JQuery</h2>
+    <button id="green-button" type="button" class="btn btn-success">HIDE</button>
+    <div class="card" id="green-card">
+        <div class="card-body bg-success text-white">
+            <h3>Ui Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus eligendi error excepturi fugit illum ipsam magni modi optio possimus quisquam, ratione totam vero? A aliquam consequatur dolor eius expedita facilis fugiat illo, ipsa, minima minus molestiae nemo, omnis quisquam vitae voluptas? Dolore doloribus, earum eveniet expedita necessitatibus placeat sint.</p>
+        </div>
+    </div>
+
+    <h2>JQuery Example 1</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h2 id="message">Good Morning</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias debitis dicta dolor dolores ea fuga harum, iste iure obcaecati omnis perferendis porro, reiciendis. Accusamus adipisci atque aut autem consequatur corporis dolore dolores dolorum eius enim, error fugit id iusto laboriosam nulla quasi repudiandae similique sunt suscipit tempora tempore ut.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam autem commodi distinctio dolores ducimus est exercitationem, expedita in itaque iusto, mollitia natus nemo obcaecati odit optio quas qui quis quod soluta sunt suscipit ut voluptas. Consequuntur nulla officiis quis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-primary btn-block">Good Morning</button>
+                <button type="button" class="btn btn-success btn-block" >Good Afternoon</button>
+                <button type="button" class="btn btn-warning btn-block">Good Evening</button>
+                <button type="button" class="btn btn-danger btn-block">Good Night</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>JQuery Form</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-light text-white">
+                        <form>
+                            <div class="form-group">
+                                <input id="user" type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-primary" id="display-text"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/fontawesome-all.js"></script>
+<script src="../bootstrap/js/jquery-3.3.1.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="01_app.js"></script>
+<script>
+    // Internal way of JQuery
+    $('#card').click(function () {
+        $(this).hide();
+    });
+</script>
+</body>
+</html>
+

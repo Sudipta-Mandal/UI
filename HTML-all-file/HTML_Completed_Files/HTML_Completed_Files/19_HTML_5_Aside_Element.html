@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Aside Element</title>
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            margin: 0;
+        }
+        aside{
+            background-color: black;
+            color: white;
+            float: left;
+            width: 250px;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+            top:0;
+            left: 0;
+        }
+        aside ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        aside ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 14px 25px;
+            display: block;
+            font-size: 20px;
+        }
+        aside ul li a:hover{
+            background-color: lightgrey;
+            color: black;
+        }
+        aside ul li img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+        section{
+            margin-left: 250px;
+            padding: 20px;
+        }
+        section h1{
+            font-size: 30px;
+        }
+        section #name{
+            font-family: "Old English Text MT",sans-serif;
+            font-size: 70px;
+            margin: 0;
+        }
+        #experience table{
+            width: 100%;
+        }
+        #experience table td{
+            padding: 10px;
+        }
+        .read-more{
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 12px 25px;
+            border: none;
+        }
+        .education-image{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
+        #contact-me table{
+            background-color: lightgrey;
+            margin: auto;
+            padding: 20px;
+            border: 5px double black;
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML Aside Element -->
+    <aside>
+        <ul>
+            <li>
+                <img src="img/naveen.png">
+            </li>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#certificates">Certificates</a>
+            </li>
+            <li>
+                <a href="#references">References</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+        </ul>
+    </aside>
+
+    <section id="about-me">
+        <h1 id="name">NAVEEN SAGGAM</h1>
+        <h2>Experienced Full Stack Developer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ducimus esse exercitationem, expedita in laborum modi nisi nostrum odit provident quae suscipit tempora, temporibus! At autem cumque debitis dicta dignissimos dolorum earum est iusto laborum maxime nemo nesciunt nobis non praesentium quia quo quos, rerum saepe suscipit tempora tempore voluptate.</p>
+    </section>
+
+    <section id="experience">
+        <h1>Experience</h1>
+        <table>
+            <tr>
+                <td>
+                    <h2>Infosys</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <h2>Google</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <h2>HCL</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="education">
+        <h1>Education</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/background.jpg" class="education-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <img src="img/forest.jpg" class="education-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <img src="img/nature_path.jpg" class="education-image">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="certificates">
+        <h1>Certificates</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/background.jpg" class="education-image">
+                    <h2>Certificate 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <img src="img/forest.jpg" class="education-image">
+                    <h2>Certificate 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <img src="img/nature_path.jpg" class="education-image">
+                    <h2>Certificate 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+                <td>
+                    <img src="img/nature_path.jpg" class="education-image">
+                    <h2>Certificate 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at aut beatae, cum cupiditate deleniti dicta dolor esse facilis fugit iusto nemo nobis, perspiciatis quam quod sed, sequi sit vero? Dolorum nulla, recusandae. Accusamus debitis ducimus error, esse eveniet explicabo fugit itaque iusto obcaecati odio officiis omnis reprehenderit tenetur voluptatum!</p>
+                    <button class="read-more">Read More</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="references">
+        <h1>References</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci aperiam asperiores blanditiis, consequuntur culpa cumque debitis distinctio eaque earum enim eum exercitationem fuga illum laborum minima modi molestias neque nihil nisi non numquam odio officia officiis pariatur praesentium quae quis quod repellat reprehenderit saepe sed similique ullam voluptates voluptatibus voluptatum! Dicta eius fugit hic inventore, ipsam nobis perferendis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid autem, blanditiis dicta ea eaque eos esse facilis impedit ipsum itaque iure iusto modi necessitatibus optio, praesentium quasi quisquam rem repellendus reprehenderit tenetur ullam unde. Aliquam distinctio exercitationem placeat ratione veniam. Ea earum fuga iusto nesciunt, quae sapiente tempore vero! A aspernatur assumenda delectus nesciunt repellendus? Animi cum expedita fugit harum incidunt magnam mollitia obcaecati quod tempore ullam! Cum dicta ducimus eveniet modi reiciendis unde. Blanditiis fugit nulla officia similique vero? Aperiam iste, nihil. Ab alias aliquam aperiam assumenda, autem consequatur dignissimos eaque expedita ipsa modi repellat tempore, ut, veritatis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium amet, blanditiis corporis culpa deleniti earum expedita harum inventore laborum maiores minima molestias, necessitatibus nostrum officiis perferendis quaerat quia quibusdam quis quisquam quo rerum sed sequi suscipit ullam vel voluptas.</p>
+    </section>
+
+    <section id="contact-me">
+        <h1>Contact Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aliquid consequuntur distinctio eum exercitationem explicabo illo iure, magnam maiores praesentium similique sint tempore totam unde ut vel voluptas? Alias blanditiis culpa ducimus ea earum esse excepturi facilis illo, impedit inventore iste modi nam natus nobis, obcaecati quidem repellat, unde voluptatibus.</p>
+        <table>
+            <tr>
+                <td>Your Name</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Email</td>
+                <td>
+                    <input type="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Your Message</td>
+                <td>
+                    <textarea rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Contact" class="read-more">
+                </td>
+            </tr>
+        </table>
+    </section>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="18_styles.css">
+    <title>JQuery Validation</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">JQuery Validation</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container mt-5">
+    <!--########################START HERE#########################-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Empty -->
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center bg-primary text-white">
+                        <h3>Register Here</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="register-form" action="" method="get">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name" name="firstname" id="firstname">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name" name="lastname" id="lastname">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="User Name" name="username" id="username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="password" id="password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password" name="c_password" id="c_password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="terms" id="terms" value="terms">
+                                <label class="form-check-label text-muted">Accept Terms & Conditions</label>
+                            </div>
+                            <input type="submit" value="Register" class="btn btn-primary" id="submit" name="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Empty -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div style="margin-top:500px;"></div>
+
+
+<!-- BODY ENDS -->
+<script src="../bootstrap/js/fontawesome-all.js"></script>
+<script src="../bootstrap/js/jquery-3.3.1.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/mdb.min.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="18_script.js"></script>
+</body>
+</html>
+
